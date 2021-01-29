@@ -3,7 +3,6 @@ var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 context.canvas.width  = window.innerWidth;
 context.canvas.height = window.innerHeight;
-context.lineWidth = 10;
 
 // get the html elements
 var checkboxRandom = document.getElementById ("randomColor");
@@ -23,9 +22,9 @@ function onMouseClick(e) {
 function onMouseMove(e) {
     if (mouseClicked ) {
         context.beginPath();
-        context.arc(e.clientX-9, e.clientY-40, 2, 0, Math.PI * 2, false);
-        context.strokeStyle = getStrokeColor();
-        context.stroke();
+        context.arc(e.clientX-9, e.clientY-40, 10, 0, Math.PI * 2, false);   // first two location, next radius, , 
+        context.fillStyle = getLineColor();
+        context.fill(); // fills in the circle
      }
 }
 // get randomized colors for the stroke
@@ -45,12 +44,12 @@ function clearCanvas(){
 }
 
 // get a stroke color
-function getStrokeColor(e){
+function getLineColor(e){
     if(checkboxRandom.checked){
-        context.strokeStyle = randomColor();  
+        context.fillStyle = randomColor();  
     } else if(checkboxErase.checked){
-        context.strokeStyle = 'white';
+        context.fillStyle = 'white';
     } else {
-        context.strokeStyle = 'black';  
+        context.fillStyle = 'black';  
     }
 }
