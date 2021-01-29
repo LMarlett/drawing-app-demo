@@ -11,13 +11,13 @@ indexBetter.html and mainBetter.js
 
 once downloaded, open the html file in a web browser to use
 
-boiler plate here 
+### boiler plate here 
 https://jsfiddle.net/LMarlett/2L4u8dmn/
 
-JSFiddles here
-Basic 
+## JSFiddles here
+### Basic 
 https://jsfiddle.net/LMarlett/2L4u8dmn/23/
 
-Better
+### Better
 https://jsfiddle.net/LMarlett/2gzvb8rc/
 
