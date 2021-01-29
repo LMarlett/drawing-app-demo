@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Draw!</title>
+        <style></style>
+    </head>
+    <body>
+        <div>
+            <button onclick="clearCanvas()">Clear Canvas</button>
+            &#8212;	
+            <input type="checkbox" id="randomColor">
+            <label for="randomColor">Randomize Color</label>
+            &#8212;	
+            <input type="checkbox" id="eraserColor">
+            <label for="eraserColor">Eraser</label>
+            &#8212;	
+            <!-- EDIT: add canvas color add symbols-->
+            <label for="head">Canvas</label>
+            <input type="color" id="canvasColor" onchange="setBackground(this)" >
+            &#8212;	
+            <label for="body">Stroke</label>
+            <input type="color"  onchange="setStroke(this)">
+        </div>
+
+        <canvas id="canvas">Canvas not supported</canvas>
+        <script src="mainBetter.js"></script>
+    </body>
+</html>
