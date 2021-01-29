@@ -46,15 +46,6 @@ function clearCanvas(){
     mouseClicked = false;    
 }
 
-// EDIT: set bg
-function setBackground(bg){
-    canvas.style.background = bg.value;
-}
-function setFill(fill){
-    canvas.fillStyle = fill.value;
-    console.log(fill)
-}
-
 // get a stroke color
 function getLineColor(e){
     if(checkboxRandom.checked){
@@ -65,4 +56,13 @@ function getLineColor(e){
     } else {
         context.fillStyle = canvas.fillStyle;  
     }
+}
+
+// EDIT: set bg
+function setBackground(bg){
+    canvas.style.background = bg.value;
+}
+function setFill(fill){
+    canvas.fillStyle = fill.value;
+    console.log(fill)
 }

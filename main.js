@@ -3,6 +3,7 @@ var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 context.canvas.width  = window.innerWidth;
 context.canvas.height = window.innerHeight;
+canvas.style.background = 'white';
 
 // get the html elements
 var checkboxRandom = document.getElementById ("randomColor");
