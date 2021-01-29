@@ -3,6 +3,7 @@ var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 context.canvas.width  = window.innerWidth;
 context.canvas.height = window.innerHeight;
+canvas.style.background = 'white';
 
 // get the html elements
 var checkboxRandom = document.getElementById ("randomColor");
@@ -59,7 +60,8 @@ function getLineColor(e){
     if(checkboxRandom.checked){
         context.fillStyle = randomColor();  
     } else if(checkboxErase.checked){
-        context.fillStyle = canvas.style.background;  // EDIT: change from white to the bg input
+        console.log(canvas.style.background)
+            context.fillStyle = canvas.style.background;  // EDIT: change from white to the bg input
     } else {
         context.fillStyle = canvas.fillStyle;  
     }
